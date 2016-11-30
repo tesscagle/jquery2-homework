@@ -27,7 +27,7 @@
     </head>
     <body>
 <table id="example" class="display" cellspacing="0" width="100%">
-  
+
     <thead>
         <tr>
             <th>Year</th>
@@ -241,11 +241,15 @@
         <script>
         $(document).ready(function(){
             $('table').DataTable({
-"order": [[ 0, "desc" ]]
+            "order": [[ 0, "desc" ]],
+            "scrollY":        "200px",
+            "scrollCollapse": true,
+            "paging":         false
+            } );
             } );
 
 
-        });</script>
+      </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
