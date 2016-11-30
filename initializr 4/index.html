@@ -39,7 +39,18 @@
         <script src="js/jquery.jqlouds.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-
+        <script>
+        $(document).ready(function() {
+        $('#sky').jQlouds();
+        });
+        $('#sky').jQlouds({
+        minClouds: 3, // minimum amount of clouds
+        maxClouds: 5, // maximum amount of clouds
+        })
+        $('#sky').jQlouds({
+        wind: true
+        });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
